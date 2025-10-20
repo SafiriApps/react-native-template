@@ -10,6 +10,14 @@ import {
   View,
 } from '@/components/ui';
 import { useIsFirstTime } from '@/lib/hooks';
+/**
+ * Render the onboarding screen for first-time users.
+ *
+ * Displays a cover image, title, descriptive bullet lines, and a call-to-action button.
+ * Pressing the button sets the app's first-time flag to `false` and navigates to the login screen.
+ *
+ * @returns The JSX element for the onboarding screen
+ */
 export default function Onboarding() {
   const [_, setIsFirstTime] = useIsFirstTime();
   const router = useRouter();
